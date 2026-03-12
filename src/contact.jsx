@@ -28,7 +28,7 @@ export default function Contact() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "../public/myresume.pdf"; // file must be in public folder
+    link.href = "/myresume.pdf"; // file must be in public folder
     link.download = "Debabrata_Dey_Resume.pdf"; // filename for download
     link.click();
   };
@@ -43,12 +43,12 @@ export default function Contact() {
         </p>
         <div className="copy-info">
           <div>
-            <i className="fa-solid fa-at"></i>
+            <i className="fa-solid fa-phone"></i>
             <p> (91+) 9735123512</p>
             <i className={icon[0]} onClick={() => handleClick(0)}></i>
           </div>
           <div>
-            <i className="fa-solid fa-phone"></i>
+            <i className="fa-solid fa-at"></i>
             <p> ddey230106@gmail.com</p>
             <i className={icon[1]} onClick={() => handleClick(1)}></i>
           </div>
@@ -59,7 +59,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <p className="copyright">© 2026 Debabrata. All rights reserved.</p>
+      <p className="copyright">© {new Date().getFullYear()} Debabrata Dey | Built and designed by me.</p>
     </section>
   );
 }

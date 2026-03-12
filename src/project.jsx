@@ -61,9 +61,19 @@ export default function Project() {
             <div key={video.id}>
               <div className="detail">
                 <div>
-                  <h2>{video.title}</h2>
-                  <i className={video.icon}></i>
+                  <h2 onClick={() => window.open(video.site, "_blank")}>
+                    <i className={video.icon} id="project-icon"></i>
+                    <span>{video.title}</span>
+                    <i className="ri-arrow-right-up-line"></i>
+                  </h2>
+
+                  <i
+                    className="fa-solid fa-code-branch"
+                    id="branch-icon"
+                    onClick={() => window.open(video.github, "_blank")}
+                  ></i>
                 </div>
+
                 <p>{video.description}</p>
               </div>
               <div className="videoContainer">

@@ -32,9 +32,9 @@ export default function About() {
           </p>
         </div>
       </div>
-      <a href="#skill" className="btn-box">
+      {/* <a href="#skill" className="btn-box">
         More About Me
-      </a>
+      </a> */}
     </section>
   );
 }
