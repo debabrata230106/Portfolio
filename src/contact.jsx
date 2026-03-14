@@ -28,7 +28,7 @@ export default function Contact() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/myresume.pdf"; // file must be in public folder
+    link.href = "/resume.pdf"; // file must be in public folder
     link.download = "Debabrata_Dey_Resume.pdf"; // filename for download
     link.click();
   };
