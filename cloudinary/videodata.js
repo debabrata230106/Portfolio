@@ -15,7 +15,7 @@ export const VIDEOS = [
       "A memory game built with vanilla JavaScript with dark and light mode support. Users can choose the difficulty level, enter their name, and start the game. It also includes a help button to learn the rules and watch a tutorial video. More features are planned for the future.",
     icon: "fa-solid fa-chess",
     github: "https://github.com/debabrata230106/Simon-Say-game",
-    site: "",
+    site: "https://simon-say-game-puce.vercel.app/",
   },
   {
     id: "color_eiei5a",
@@ -23,7 +23,7 @@ export const VIDEOS = [
     icon: "fa-solid fa-paintbrush",
     description: "A color palette generator built with vanilla JavaScript. Users can generate random color palettes or create custom ones by adjusting hue, saturation, and lightness values. Additional features are planned for future updates.",
     github: "https://github.com/debabrata230106/Color-Generator",
-    site: "",
+    site: "https://color-generator-eosin-alpha.vercel.app",
   },
   {
     id: "quiz_lzzixg",
