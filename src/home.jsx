@@ -1,11 +1,9 @@
 import "./home.css";
 import "./App.css";
 import TypingEffect from "./typing.jsx";
-import { useState } from "react";
 import CloudVideo from "../cloudinary/cloudvideo.jsx";
 
-function Home() {
-  const [video, setVideo] = useState(false);
+function Home({ video, setVideo }) {
 
   return (
     <section className="home" id="home">
@@ -54,6 +52,8 @@ function Home() {
       <div className="intro-video" style={{ display: video ? "flex" : "none" }}>
         <CloudVideo
           publicId={"WhatsApp_Video_2025-05-10_at_23.34.11_2de79a0f_safrt0"}
+          controls={true}
+          muted={false}
         />
         <i
           className="ri-close-line"

@@ -6,7 +6,7 @@ import { useRef } from "react";
 export default function CloudVideo({
   publicId,
   className = "",
-  controls = true,
+  controls = false,
   muted = true,
 }) {
   const video = cld
@@ -21,9 +21,7 @@ export default function CloudVideo({
   };
 
   const handleMouseLeave = () => {
-    if (!videoRef.current) return;
-    videoRef.current.pause();
-    videoRef.current.currentTime = 0;
+    videoRef.current?.pause();
   };
   return (
     <AdvancedVideo

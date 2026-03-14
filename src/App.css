@@ -25,6 +25,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 0;
+  overflow-x: hidden;
 }
 
 @keyframes slideRight {
@@ -71,4 +72,11 @@ span {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 340px) {
+  .main {
+    min-width: 350px;
+    overflow-x: scroll;
+  }
 }

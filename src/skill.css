@@ -1,13 +1,12 @@
 #skill {
   min-height: 100vh;
   width: 100%;
-    padding: 80px 10% 50px 10%;
+  padding: 50px 10% 50px 10%;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 50px;
 }
 #skill > div {
   display: flex;
@@ -15,12 +14,10 @@
   gap: 50px;
   justify-content: space-between;
   align-items: center;
-  min-height: 300px;
-  flex-wrap: wrap;
+  min-height: fit-content;
 }
-
 #skill h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   letter-spacing: 1px;
   text-align: left;
@@ -43,12 +40,13 @@ section.animate a {
 .skill-text {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  min-width: 500px;
+  gap: 20px;
+  justify-content: center;
+  width: fit-content;
 }
 .skill-text h3 {
-  font-size: 20px;
-  font-weight: light;
+  font-size: 18px;
+  font-weight: light !important;
   letter-spacing: 1px;
   text-align: left;
   color: rgba(240, 248, 255, 0.8);
@@ -59,13 +57,13 @@ section.animate .skill-text h3 {
   animation-delay: calc(0.1s * var(--k));
 }
 .skill-text h3 i {
-  color: rgba(0, 238, 255, 0.7);
-  margin-right: 15px;
+  color: rgba(0, 238, 255, 0.9);
+  margin-right: 12px;
 }
 .skill-text h3 span {
-  font-size: 30px !important;
+  font-size: 27px !important;
   color: #0ef !important;
-  font-weight: 700 !important;
+  font-weight: bold !important;
 }
 .skill-icons {
   display: grid;
@@ -104,8 +102,8 @@ section.animate .skill-icons img {
   transform: rotate(360deg);
 }
 .text1 {
-  font-size: 20px !important;
-  font-weight: 100;
+  font-size: 18px !important;
+  font-weight: 100 !important;
   letter-spacing: 2px;
   color: rgba(240, 248, 255, 0.5);
   text-align: center !important;
@@ -116,4 +114,94 @@ section.animate .skill-icons img {
 section.animate .text1 {
   animation: slideLeft 1s ease forwards;
   animation-delay: 0.4s;
+}
+
+@media (max-width: 900px) {
+  #skill {
+    padding: 80px 7% 50px 7%;
+  }
+  #skill > div {
+    gap: 50px;
+  }
+  #skill h2 {
+    font-size: 23px;
+  }
+  .skill-text {
+    gap: 20px;
+  }
+  .skill-text h3 {
+    font-size: 17px;
+  }
+  .skill-text h3 span {
+    font-size: 25px !important;
+  }
+  .skill-icons {
+    gap: 35px; /* spacing between cells */
+  }
+  .skill-icons i,
+  .skill-icons img {
+    width: 38px;
+    height: 38px;
+    font-size: 45px;
+  }
+  .text1 {
+    font-size: 16px !important;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 750px) {
+  #skill {
+    padding: 80px 5% 50px 5%;
+  }
+  #skill > div {
+    gap: 50px;
+  }
+  #skill h2 {
+    font-size: 22px;
+  }
+  .skill-text {
+    gap: 12px;
+  }
+  .skill-text h3 {
+    font-size: 16px;
+  }
+  .skill-text h3 span {
+    font-size: 24px !important;
+  }
+  .skill-icons {
+    gap: 30px; /* spacing between cells */
+  }
+  .skill-icons i,
+  .skill-icons img {
+    width: 35px;
+    height: 35px;
+    font-size: 40px;
+  }
+  .text1 {
+    font-size: 14px !important;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 650px) {
+  #skill {
+    gap: 35px;
+    padding: 55px 5% 50px 5%;
+  }
+  #skill > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-text {
+    align-self: flex-start;
+  }
+  .skill-text h3 {
+    font-size: 14px;
+  }
+  .skill-text h3 span {
+    font-size: 20px !important;
+  }
+  .skill-text h3 i {
+    margin-right: 6px;
+  }
 }

@@ -9,7 +9,10 @@ export default function About() {
       </h2>
       <div className="about-content">
         <div style={{ "--j": 1 }}>
-          <h2>Education</h2>
+          <h2>
+            <span>Education</span>
+            <i class="fa-solid fa-book-open"></i>
+          </h2>
           <p>
             I completed my primary education from West Bengal. I got 85% marks
             in class 10<sup>th</sup>. Current studing B.Tech(CSE) and got 9.04
@@ -17,14 +20,20 @@ export default function About() {
           </p>
         </div>
         <div style={{ "--j": 2 }}>
-          <h2>Interest</h2>
+          <h2>
+            <span>Interest</span>
+            <i class="fa-solid fa-brain"></i>
+          </h2>
           <p>
             I like Programming and Problem solving. Passionate about web
             developoment and designing. Mathmatics is my favourite subject.
           </p>
         </div>
         <div style={{ "--j": 3 }}>
-          <h2>Mission</h2>
+          <h2>
+            <span>Mission</span>
+            <i class="fa-solid fa-medal"></i>
+          </h2>
           <p>
             Being a proffesional <span>Full Stack Developer</span> and a
             successful engineer. I keen to explpore new technologies and

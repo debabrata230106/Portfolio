@@ -63,8 +63,10 @@ export default function Project() {
                 <div>
                   <h2 onClick={() => window.open(video.site, "_blank")}>
                     <i className={video.icon} id="project-icon"></i>
-                    <span>{video.title}</span>
-                    <i className="ri-arrow-right-up-line"></i>
+                    <span>
+                      {video.title}&nbsp;
+                      <i className="ri-arrow-right-up-line"></i>
+                    </span>
                   </h2>
 
                   <i

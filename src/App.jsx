@@ -10,6 +10,7 @@ import { useState } from "react";
 
 function App() {
   const [activeNav, setActiveNav] = useState("home");
+  const [video, setVideo] = useState(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -41,7 +42,7 @@ function App() {
   return (
     <div className="main">
       <Header activeNav={activeNav} setActiveNav={setActiveNav} />
-      <Home />
+      <Home video={video} setVideo={setVideo} />
       <About />
       <Skill />
       <Project />

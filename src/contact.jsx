@@ -44,17 +44,17 @@ export default function Contact() {
         <div className="copy-info">
           <div>
             <i className="fa-solid fa-phone"></i>
-            <p> (91+) 9735123512</p>
+            <p>(91+) 9735123512</p>
             <i className={icon[0]} onClick={() => handleClick(0)}></i>
           </div>
           <div>
             <i className="fa-solid fa-at"></i>
-            <p> ddey230106@gmail.com</p>
+            <p>ddey230106@gmail.com</p>
             <i className={icon[1]} onClick={() => handleClick(1)}></i>
           </div>
           <div>
             <i className="fa-solid fa-link"></i>
-            <p> https://github.com/debabrata230106</p>
+            <p>github.com/debabrata230106</p>
             <i className={icon[2]} onClick={() => handleClick(2)}></i>
           </div>
         </div>

@@ -34,8 +34,8 @@ function Header( { activeNav, setActiveNav } ) {
         <i
           id="hamburger"
           style={{
-            display: width < 950 ? "block" : "none",
-            right: toggle ? "130px" : "0",
+            display: width < 750 ? "block" : "none",
+            right: toggle ? "110px" : "5vw",
           }}
           className={toggle ? "fa-solid fa-xmark" : "fas fa-bars"}
           onClick={() => {
@@ -45,7 +45,7 @@ function Header( { activeNav, setActiveNav } ) {
 
         <nav
           className="navbar"
-          style={{ display: width < 950 ? "none" : "block" }}
+          style={{ display: width < 750 ? "none" : "block" }}
         >
           <a href="#home" style={{ "--i": 1 }} className= {activeNav === "home" ? "active" : ""} onClick={() => setActiveNav("home")}>
             Home
@@ -67,7 +67,7 @@ function Header( { activeNav, setActiveNav } ) {
       <nav
         className="burger"
         style={{
-          display: width < 950 ? "flex" : "none",
+          display: width < 750 ? "flex" : "none",
           right: toggle ? "0px" : "-180px",
         }}
       >
