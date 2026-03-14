@@ -241,7 +241,7 @@ section.animate .image {
 }
 @media (max-width: 750px) {
   #home {
-    padding: 55px 5% 50px 5%;
+    padding: 60px 5% 50px 5%;
     flex-direction: column-reverse;
     gap: 30px;
     justify-content: center;
