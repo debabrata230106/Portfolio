@@ -47,7 +47,7 @@ function Home({ video, setVideo }) {
         </a>
       </div>
 
-      <img src="/myphoto.png" alt="Myphoto" className="image" />
+      <img src="/myphoto.jpeg" alt="Myphoto" className="image" />
 
       <div className="intro-video" style={{ display: video ? "flex" : "none" }}>
         <CloudVideo
