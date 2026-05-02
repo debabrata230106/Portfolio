@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 110px;
   overflow-x: hidden;
 
   padding: 100px 10% 50px 10%;
@@ -131,6 +131,10 @@ section.animate .btn-box {
     0 0 100px cyan,
     0 0 200px cyan;
 }
+.img-cont {
+  perspective: 1000px;
+  opacity: 0;
+}
 .image {
   border-radius: 50%;
   object-fit: cover;
@@ -142,13 +146,23 @@ section.animate .btn-box {
     0 0 200px cyan,
     0 0 500px cyan;
   border-color: whitesmoke;
-  opacity: 0;
+  cursor: pointer;
+  transition: transform 1s linear;
+  transform-style: preserve-3d;
 
   border-width: 2px;
   min-width: 400px;
   height: 400px;
 }
-section.animate .image {
+.img-cont p {
+  color: rgb(255, 255, 255, 0.8);
+  font-weight: bold;
+  text-align: center;
+
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+section.animate .img-cont {
   animation: slideLeft 1s ease forwards;
   animation-delay: 0.8s;
 }
@@ -195,6 +209,9 @@ section.animate .image {
     min-width: 320px;
     height: 320px;
   }
+  .img-cont p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 900px) {
   #home {
@@ -237,6 +254,9 @@ section.animate .image {
   .image {
     min-width: 300px;
     height: 300px;
+  }
+  .img-cont p {
+    font-size: 13px;
   }
 }
 @media (max-width: 750px) {
@@ -287,6 +307,10 @@ section.animate .image {
     margin-top: 0px;
     min-width: 200px;
     height: 200px;
+  }
+  .img-cont p {
+    font-size: 12px;
+    margin-bottom: 6px;
   }
 }
 

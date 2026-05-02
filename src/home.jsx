@@ -2,8 +2,31 @@ import "./home.css";
 import "./App.css";
 import TypingEffect from "./typing.jsx";
 import CloudVideo from "../cloudinary/cloudvideo.jsx";
+import { useState } from "react";
 
 function Home({ video, setVideo }) {
+  const images = ["/myphoto1.jpeg", "/myphoto2.jpeg"];
+
+  const [flipped, setFlipped] = useState(false);
+  const [index, setIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const imageClick = () => {
+    if (isAnimating) return;
+
+    setIsAnimating(true);
+
+    setFlipped((prev) => !prev); // toggle 0 ↔ 180
+
+    // change image at mid flip
+    setTimeout(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 500);
+
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 1000);
+  };
 
   return (
     <section className="home" id="home">
@@ -47,7 +70,18 @@ function Home({ video, setVideo }) {
         </a>
       </div>
 
-      <img src="/myphoto.jpeg" alt="Myphoto" className="image" />
+      <div className="img-cont">
+        <p>Click to Flip</p>
+        <img
+          src={images[index]}
+          alt="Myphoto"
+          className="image"
+          onClick={imageClick}
+          style={{
+            transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
+          }}
+        />
+      </div>
 
       <div className="intro-video" style={{ display: video ? "flex" : "none" }}>
         <CloudVideo
